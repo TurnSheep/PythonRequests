@@ -1,4 +1,6 @@
 import time, sys
+from io import open
+
 sys.path.append('./interface')
 sys.path.append('./db_fixture')
 from HTMLTestRunner import HTMLTestRunner
