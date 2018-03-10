@@ -1,4 +1,6 @@
 import sys
+from builtins import ImportError
+
 sys.path.append('../db_fixture')
 try:
     from mysql_db import DB
