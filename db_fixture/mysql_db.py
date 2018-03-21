@@ -51,7 +51,7 @@ class DB:
         key   = ','.join(table_data.keys())
         value = ','.join(table_data.values())
         real_sql = "INSERT INTO " + table_name + " (" + key + ") VALUES (" + value + ")"
-        #print(real_sql)
+        print(real_sql)
 
         with self.connection.cursor() as cursor:
             cursor.execute(real_sql)
@@ -70,7 +70,7 @@ class DB:
                 self.insert(table, d)
         self.close()
 
-
+'''
 if __name__ == '__main__':
 
     db = DB()
@@ -82,3 +82,4 @@ if __name__ == '__main__':
     db.clear(table_name)
     db.insert(table_name, data)
     db.close()
+    '''
